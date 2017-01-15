@@ -7,7 +7,7 @@ import org.jsoup.Jsoup;
  * This class provides historical data (close, high, low, open and volume) on the requested stocks 
  * by retrieving quotes from Google Finance API, {@linkplain http://www.google.com/finanace/getprices}.
  * 
- * @author alice
+ * @author alice<aliceinnets@gmail.com>
  *
  */
 public class GoogleFinanceGetprices {
