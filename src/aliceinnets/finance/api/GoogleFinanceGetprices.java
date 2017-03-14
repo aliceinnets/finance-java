@@ -104,6 +104,7 @@ public class GoogleFinanceGetprices {
 				data[i][0] = Double.parseDouble(dataStringHeader[i]);
 			}
 			
+			// FIXME: it can have TIMEZONE_OFFET between the data due to summer time 
 			for(int j=1;j<data[0].length;++j) {
 				String[] dataString = bodyTextLines[j+7].split(",");
 				if(dataString[0].contains("a")) {
