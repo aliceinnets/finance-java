@@ -2,7 +2,7 @@ package aliceinnets.finance.api;
 
 import junit.framework.TestCase;
 
-public class Test extends TestCase {
+public class TestGoogleFinanceGetpricesApi extends TestCase {
 	
 	public void testGoogleFinanceGetprices() {
 		GoogleFinanceGetprices api = new GoogleFinanceGetprices("GOOG", 120.0, "1d");
