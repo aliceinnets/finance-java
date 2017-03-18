@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>aliceinnets</groupId>
 	<artifactId>java-finance-api</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.0</version>
 
 	<name>Java Finance APIs</name>
 	<!-- <description></description> -->
@@ -60,6 +60,23 @@
 					</execution>
 				</executions>
 			</plugin>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.10.4</version>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+						<configuration>
+							<failOnError>false</failOnError>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -72,12 +89,7 @@
 							<goal>shade</goal>
 						</goals>
 						<configuration>
-							<transformers>
-								<transformer
-									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>org.sonatype.haven.HavenCli</mainClass>
-								</transformer>
-							</transformers>
+							<minimizeJar>true</minimizeJar>
 						</configuration>
 					</execution>
 				</executions>

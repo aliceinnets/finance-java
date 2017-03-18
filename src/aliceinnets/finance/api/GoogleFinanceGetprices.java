@@ -7,10 +7,10 @@ import org.jsoup.Jsoup;
  * This class provides historical data (close, high, low, open and volume) on the requested stocks 
  * by retrieving quotes from Google Finance API, {@linkplain http://www.google.com/finanace/getprices}.
  * 
- * FIXME beginning and end of summer time introduce extra time zone offset config, which break the system
- * e.g. TIME_ZONE_OFFSET = -240 (from -300) inbetween data
+ * <p>FIXME beginning and end of summer time introduce extra time zone offset config, which break the system
+ * e.g. TIME_ZONE_OFFSET = -240 (from -300) inbetween data</p>
  * 
- * @author alice<aliceinnets@gmail.com>
+ * @author alice(<em>aliceinnets@gmail.com</em>)
  *
  */
 public class GoogleFinanceGetprices {
