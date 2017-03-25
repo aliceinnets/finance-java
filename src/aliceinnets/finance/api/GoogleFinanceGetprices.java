@@ -10,7 +10,7 @@ import org.jsoup.Jsoup;
  * <p>FIXME beginning and end of summer time introduce extra time zone offset config, which break the system
  * e.g. TIME_ZONE_OFFSET = -240 (from -300) inbetween data</p>
  * 
- * @author alice(<em>aliceinnets@gmail.com</em>)
+ * @author alice&lt;aliceinnets@gmail.com&gt;
  *
  */
 public class GoogleFinanceGetprices {
